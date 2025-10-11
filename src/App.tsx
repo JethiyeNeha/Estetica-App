@@ -40,7 +40,7 @@ export function LoginRedirect({ children }: LayoutProps) {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/Estetica-App">
         <Routes>
           <Route
             path="/"
