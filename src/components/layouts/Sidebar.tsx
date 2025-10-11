@@ -6,13 +6,10 @@ import arrowright from "../../assets/icons/Arrow - Down 3.png";
 import logo from "../../assets/icons/image 17.png";
 
 const Sidebar: React.FC = () => {
-  const [activeItem, setActiveItem] = useState("appointments");
+  const [activeItem] = useState("appointments");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const sidebarSections: IsidebarSteps[] = SIDEBAR_STEPS;
-  const handleItemClick = (itemId: string) => {
-    // setActiveItem(itemId);
-  };
 
 return (
     <>
@@ -57,7 +54,6 @@ return (
                   <div key={item.id}>
                     <button
                       onClick={() => {
-                        handleItemClick(item.id);
                         setIsMobileMenuOpen(false);
                       }}
                       className="w-full flex items-center justify-between px-6 py-3 text-left"
