@@ -1,69 +1,41 @@
-# React + TypeScript + Vite
+# Vite + React + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple responsive web app built with Vite, React, TypeScript, and Tailwind CSS.
+It works smoothly on mobile, tablet, and desktop screens.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ⚡ **Fast Development** – Powered by Vite for instant HMR and optimized builds
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🧩 **React + TypeScript** – Component-based architecture with type safety
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🎨 **TailwindCSS Styling** – Clean, utility-first CSS for rapid UI development
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 📱 **Fully Responsive** – Smooth layouts for mobile, tablet, and desktop views
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 💡 **Reusable Components** – Modular and maintainable code structure
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Screenshots
+
+Here’s a glimpse of the app in action 👇  
+
+### Landing Page 
+![LandingPage](src/assets/screenshots/landing-page.png)
+
+### Tab View
+![TabView](src/assets/screenshots/tab_view.png) 
+
+### Mobile View
+![mobileView](src/assets/screenshots/mobile_view.png)
+
+## Run the project
+
+- Clone it
+- npm install (Node Version 20 => nvm use 20)
+- npm run dev
+
